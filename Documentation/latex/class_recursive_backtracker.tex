@@ -1,0 +1,98 @@
+\hypertarget{class_recursive_backtracker}{}\section{Recursive\+Backtracker Class Reference}
+\label{class_recursive_backtracker}\index{RecursiveBacktracker@{RecursiveBacktracker}}
+
+
+Recursive Backtracker implementation of the maze generation algorithm.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{[},\mbox{]} \mbox{\hyperlink{class_recursive_backtracker_aad90aef96d152cffe30e82cf2d25a249}{Generate\+Maze}} (int height, int width)
+\begin{DoxyCompactList}\small\item\em Generate a maze through recursion on a 2d array, starting from a random cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recursive_backtracker_a6c674f12c0bfe5b443c1d52b15beb311}{recursion}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em recursive algorithm to generate maze \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recursive_backtracker_a982f5e5e9fc3e26f59d0f63d23c2e867}{Shuffle$<$ T $>$}} (T\mbox{[}$\,$\mbox{]} array)
+\begin{DoxyCompactList}\small\item\em A generic algorithm to shuffle an array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_recursive_backtracker_a014a89a3667131304248d09b56c52d56}\label{class_recursive_backtracker_a014a89a3667131304248d09b56c52d56}} 
+int \mbox{[},\mbox{]} {\bfseries maze}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_recursive_backtracker_aca51883f95cfe740ef45bd1cdf0c1904}\label{class_recursive_backtracker_aca51883f95cfe740ef45bd1cdf0c1904}} 
+int {\bfseries maze\+Height}
+\item 
+\mbox{\Hypertarget{class_recursive_backtracker_aa5bc7747f36ca5904c94843c163040f0}\label{class_recursive_backtracker_aa5bc7747f36ca5904c94843c163040f0}} 
+int {\bfseries maze\+Width}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Recursive Backtracker implementation of the maze generation algorithm. 
+
+Works directly with a 2d array where it recursively searches for walls to remove in random directions. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_recursive_backtracker_aad90aef96d152cffe30e82cf2d25a249}\label{class_recursive_backtracker_aad90aef96d152cffe30e82cf2d25a249}} 
+\index{RecursiveBacktracker@{RecursiveBacktracker}!GenerateMaze@{GenerateMaze}}
+\index{GenerateMaze@{GenerateMaze}!RecursiveBacktracker@{RecursiveBacktracker}}
+\subsubsection{\texorpdfstring{GenerateMaze()}{GenerateMaze()}}
+{\footnotesize\ttfamily int \mbox{[},\mbox{]} Recursive\+Backtracker.\+Generate\+Maze (\begin{DoxyParamCaption}\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Generate a maze through recursion on a 2d array, starting from a random cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & and width of the maze\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2d array representing the maze 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_recursive_backtracker_a6c674f12c0bfe5b443c1d52b15beb311}\label{class_recursive_backtracker_a6c674f12c0bfe5b443c1d52b15beb311}} 
+\index{RecursiveBacktracker@{RecursiveBacktracker}!recursion@{recursion}}
+\index{recursion@{recursion}!RecursiveBacktracker@{RecursiveBacktracker}}
+\subsubsection{\texorpdfstring{recursion()}{recursion()}}
+{\footnotesize\ttfamily void Recursive\+Backtracker.\+recursion (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+recursive algorithm to generate maze 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting} & row and column position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_recursive_backtracker_a982f5e5e9fc3e26f59d0f63d23c2e867}\label{class_recursive_backtracker_a982f5e5e9fc3e26f59d0f63d23c2e867}} 
+\index{RecursiveBacktracker@{RecursiveBacktracker}!Shuffle$<$ T $>$@{Shuffle$<$ T $>$}}
+\index{Shuffle$<$ T $>$@{Shuffle$<$ T $>$}!RecursiveBacktracker@{RecursiveBacktracker}}
+\subsubsection{\texorpdfstring{Shuffle$<$ T $>$()}{Shuffle< T >()}}
+{\footnotesize\ttfamily void Recursive\+Backtracker.\+Shuffle$<$ T $>$ (\begin{DoxyParamCaption}\item[{T \mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})}
+
+
+
+A generic algorithm to shuffle an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Array} & to shuffle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shuffled array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sanan/\+One\+Drive/\+Documents/\+Maze\+\_\+generator/\+Assets/\+Scripts/Recursive\+Backtracker.\+cs\end{DoxyCompactItemize}

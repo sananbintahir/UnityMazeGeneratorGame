@@ -1,0 +1,78 @@
+\hypertarget{class_disjoint_set}{}\section{Disjoint\+Set Class Reference}
+\label{class_disjoint_set}\index{DisjointSet@{DisjointSet}}
+
+
+This is a \mbox{\hyperlink{class_disjoint_set}{Disjoint\+Set}} datatype used by kruskal\textquotesingle{}s algorithm. The code has been written to handle the \mbox{\hyperlink{class_cell}{Cell}} class.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_disjoint_set_a2e6873a82e88a6b02268b6be45a774b2}{Disjoint\+Set}} (Array\+List c)
+\begin{DoxyCompactList}\small\item\em constructor that puts each cell in a different set by making it the parent of itself \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell}{Cell}} \mbox{\hyperlink{class_disjoint_set_a79914532cc72592a64d8e2e9fd91a5a0}{Find}} (\mbox{\hyperlink{class_cell}{Cell}} i)
+\begin{DoxyCompactList}\small\item\em Recursive function to find the set a cell belongs to, represented by the root node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_disjoint_set_a5c28601d0773150fd191ed4d2f5f6f0a}{Union}} (\mbox{\hyperlink{class_cell}{Cell}} i, \mbox{\hyperlink{class_cell}{Cell}} j)
+\begin{DoxyCompactList}\small\item\em Takes 2 cells and puts them into the same set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_disjoint_set_a7500582dba7a04d391f0d4d2e1705e36}\label{class_disjoint_set_a7500582dba7a04d391f0d4d2e1705e36}} 
+int {\bfseries Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_disjoint_set_ac0c0e6d2b5bb6b83d422d841a0ce3e71}\label{class_disjoint_set_ac0c0e6d2b5bb6b83d422d841a0ce3e71}} 
+Array\+List {\bfseries cells} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a \mbox{\hyperlink{class_disjoint_set}{Disjoint\+Set}} datatype used by kruskal\textquotesingle{}s algorithm. The code has been written to handle the \mbox{\hyperlink{class_cell}{Cell}} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_disjoint_set_a2e6873a82e88a6b02268b6be45a774b2}\label{class_disjoint_set_a2e6873a82e88a6b02268b6be45a774b2}} 
+\index{DisjointSet@{DisjointSet}!DisjointSet@{DisjointSet}}
+\index{DisjointSet@{DisjointSet}!DisjointSet@{DisjointSet}}
+\subsubsection{\texorpdfstring{DisjointSet()}{DisjointSet()}}
+{\footnotesize\ttfamily Disjoint\+Set.\+Disjoint\+Set (\begin{DoxyParamCaption}\item[{Array\+List}]{c }\end{DoxyParamCaption})}
+
+
+
+constructor that puts each cell in a different set by making it the parent of itself 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_disjoint_set_a79914532cc72592a64d8e2e9fd91a5a0}\label{class_disjoint_set_a79914532cc72592a64d8e2e9fd91a5a0}} 
+\index{DisjointSet@{DisjointSet}!Find@{Find}}
+\index{Find@{Find}!DisjointSet@{DisjointSet}}
+\subsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} Disjoint\+Set.\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{i }\end{DoxyParamCaption})}
+
+
+
+Recursive function to find the set a cell belongs to, represented by the root node. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_cell}{Cell}} which is the root node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_disjoint_set_a5c28601d0773150fd191ed4d2f5f6f0a}\label{class_disjoint_set_a5c28601d0773150fd191ed4d2f5f6f0a}} 
+\index{DisjointSet@{DisjointSet}!Union@{Union}}
+\index{Union@{Union}!DisjointSet@{DisjointSet}}
+\subsubsection{\texorpdfstring{Union()}{Union()}}
+{\footnotesize\ttfamily void Disjoint\+Set.\+Union (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{i,  }\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{j }\end{DoxyParamCaption})}
+
+
+
+Takes 2 cells and puts them into the same set. 
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sanan/\+One\+Drive/\+Documents/\+Maze\+\_\+generator/\+Assets/\+Scripts/Disjoint\+Set.\+cs\end{DoxyCompactItemize}

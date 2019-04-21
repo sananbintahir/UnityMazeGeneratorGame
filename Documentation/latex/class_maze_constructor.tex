@@ -1,0 +1,196 @@
+\hypertarget{class_maze_constructor}{}\section{Maze\+Constructor Class Reference}
+\label{class_maze_constructor}\index{MazeConstructor@{MazeConstructor}}
+
+
+The \mbox{\hyperlink{class_maze_constructor}{Maze\+Constructor}} Class.  
+
+
+Inheritance diagram for Maze\+Constructor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_maze_constructor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_maze_constructor_aa6ea3f43b97183943c1f8287cfeb4b6f}{Generate\+New\+Maze}} (int sizeR, int sizeC)
+\begin{DoxyCompactList}\small\item\em Function to generate the maze. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maze_constructor_abd20925c5331094b43c671c1624e1781}{Dispose\+Old\+Maze}} ()
+\begin{DoxyCompactList}\small\item\em function to delete the old maze \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a4fde78640245a1bdb07b0042071f5948}\label{class_maze_constructor_a4fde78640245a1bdb07b0042071f5948}} 
+Game\+Object {\bfseries Plane}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a89ef27f8a232d97536e6a0632080ce55}\label{class_maze_constructor_a89ef27f8a232d97536e6a0632080ce55}} 
+Game\+Object {\bfseries camera}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a3eff7ebe8dbd6fb9289d1cec4c4bd08f}\label{class_maze_constructor_a3eff7ebe8dbd6fb9289d1cec4c4bd08f}} 
+Game\+Object {\bfseries coin}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a63fb277b864eaf340135e41c491800b8}\label{class_maze_constructor_a63fb277b864eaf340135e41c491800b8}} 
+int {\bfseries start\+Row}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a31c15658bb9ceb3f19f98ff2d680a766}\label{class_maze_constructor_a31c15658bb9ceb3f19f98ff2d680a766}} 
+int {\bfseries start\+Col}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a06b57c839a9ab5f842e1de3eda2e4148}\label{class_maze_constructor_a06b57c839a9ab5f842e1de3eda2e4148}} 
+int {\bfseries goal\+Row}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a70ec6a4948401796528a08b90a14369d}\label{class_maze_constructor_a70ec6a4948401796528a08b90a14369d}} 
+int {\bfseries goal\+Col}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a9d3f46f8991cfe6dc6e9c58e3bccedf4}\label{class_maze_constructor_a9d3f46f8991cfe6dc6e9c58e3bccedf4}} 
+int \mbox{[},\mbox{]} {\bfseries data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_af083615d1845fe989492cb9fd02710e8}\label{class_maze_constructor_af083615d1845fe989492cb9fd02710e8}} 
+void {\bfseries Awake} ()
+\item 
+void \mbox{\hyperlink{class_maze_constructor_a668f57a3dcd26933754452e599ac2dca}{Display\+Maze}} ()
+\begin{DoxyCompactList}\small\item\em All Game\+Objects are created and the maze is generated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maze_constructor_a335b2f75bf36c705301c114173201231}{Create\+Borders}} (int r\+Max, int c\+Max)
+\begin{DoxyCompactList}\small\item\em Creats borders of the maze. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maze_constructor_a209b5c76afef240cbcfbd50032d6e35a}{Set\+Plane\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Positions the Camera and the plane according to the number of rows and columns of the maze. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maze_constructor_a14d31f67a9de9f2351935e29f8d6ee6f}{Find\+Start\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Loops from the start of the maze to find empty position and sets the class variables accordingly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maze_constructor_a4c39dbb28528047a9bca89c29dbaf3d3}{Find\+Goal\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Loops from the end of the maze to find an empty position and sets the class variable accordingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a32be60572645e3b7c0c280b2656c3976}\label{class_maze_constructor_a32be60572645e3b7c0c280b2656c3976}} 
+\mbox{\hyperlink{class_prims}{Prims}} {\bfseries prims}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_af51a4a373d66a926ec14d8466774de73}\label{class_maze_constructor_af51a4a373d66a926ec14d8466774de73}} 
+\mbox{\hyperlink{class_kruskalls}{Kruskalls}} {\bfseries krusk}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_aef8d596f3b2457bb35b7a2925b39e300}\label{class_maze_constructor_aef8d596f3b2457bb35b7a2925b39e300}} 
+\mbox{\hyperlink{class_recursive_backtracker}{Recursive\+Backtracker}} {\bfseries backtracker}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a9125827376ad00c6e5f4c80ab5b6a04c}\label{class_maze_constructor_a9125827376ad00c6e5f4c80ab5b6a04c}} 
+Game\+Object {\bfseries sphere}
+\item 
+\mbox{\Hypertarget{class_maze_constructor_a7163e515cb1ba14f59d128fc7d88d93d}\label{class_maze_constructor_a7163e515cb1ba14f59d128fc7d88d93d}} 
+Dropdown {\bfseries dropdown}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_maze_constructor}{Maze\+Constructor}} Class. 
+
+This class uses a 2d array to represent the maze where 1s represent walls and 0s represend open spaces. It applies the algorithm to the array according to an option selected in the dropdown on the UI. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_maze_constructor_a335b2f75bf36c705301c114173201231}\label{class_maze_constructor_a335b2f75bf36c705301c114173201231}} 
+\index{MazeConstructor@{MazeConstructor}!CreateBorders@{CreateBorders}}
+\index{CreateBorders@{CreateBorders}!MazeConstructor@{MazeConstructor}}
+\subsubsection{\texorpdfstring{CreateBorders()}{CreateBorders()}}
+{\footnotesize\ttfamily void Maze\+Constructor.\+Create\+Borders (\begin{DoxyParamCaption}\item[{int}]{r\+Max,  }\item[{int}]{c\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creats borders of the maze. 
+
+Takes max number of rows and columns as parameters
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_maze_constructor_a668f57a3dcd26933754452e599ac2dca}\label{class_maze_constructor_a668f57a3dcd26933754452e599ac2dca}} 
+\index{MazeConstructor@{MazeConstructor}!DisplayMaze@{DisplayMaze}}
+\index{DisplayMaze@{DisplayMaze}!MazeConstructor@{MazeConstructor}}
+\subsubsection{\texorpdfstring{DisplayMaze()}{DisplayMaze()}}
+{\footnotesize\ttfamily void Maze\+Constructor.\+Display\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+All Game\+Objects are created and the maze is generated. 
+
+The function makes appropriate calculations to position all of the walls, which are 3d cubes, the plane, which is also a cube, and the camera.
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_maze_constructor_abd20925c5331094b43c671c1624e1781}\label{class_maze_constructor_abd20925c5331094b43c671c1624e1781}} 
+\index{MazeConstructor@{MazeConstructor}!DisposeOldMaze@{DisposeOldMaze}}
+\index{DisposeOldMaze@{DisposeOldMaze}!MazeConstructor@{MazeConstructor}}
+\subsubsection{\texorpdfstring{DisposeOldMaze()}{DisposeOldMaze()}}
+{\footnotesize\ttfamily void Maze\+Constructor.\+Dispose\+Old\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to delete the old maze 
+
+Every game\+Object is initialised with a \char`\"{}\+Generated\char`\"{} tag and we use that fact to destroy all of the objects
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_maze_constructor_a4c39dbb28528047a9bca89c29dbaf3d3}\label{class_maze_constructor_a4c39dbb28528047a9bca89c29dbaf3d3}} 
+\index{MazeConstructor@{MazeConstructor}!FindGoalPosition@{FindGoalPosition}}
+\index{FindGoalPosition@{FindGoalPosition}!MazeConstructor@{MazeConstructor}}
+\subsubsection{\texorpdfstring{FindGoalPosition()}{FindGoalPosition()}}
+{\footnotesize\ttfamily void Maze\+Constructor.\+Find\+Goal\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loops from the end of the maze to find an empty position and sets the class variable accordingly. 
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_maze_constructor_a14d31f67a9de9f2351935e29f8d6ee6f}\label{class_maze_constructor_a14d31f67a9de9f2351935e29f8d6ee6f}} 
+\index{MazeConstructor@{MazeConstructor}!FindStartPosition@{FindStartPosition}}
+\index{FindStartPosition@{FindStartPosition}!MazeConstructor@{MazeConstructor}}
+\subsubsection{\texorpdfstring{FindStartPosition()}{FindStartPosition()}}
+{\footnotesize\ttfamily void Maze\+Constructor.\+Find\+Start\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loops from the start of the maze to find empty position and sets the class variables accordingly. 
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_maze_constructor_aa6ea3f43b97183943c1f8287cfeb4b6f}\label{class_maze_constructor_aa6ea3f43b97183943c1f8287cfeb4b6f}} 
+\index{MazeConstructor@{MazeConstructor}!GenerateNewMaze@{GenerateNewMaze}}
+\index{GenerateNewMaze@{GenerateNewMaze}!MazeConstructor@{MazeConstructor}}
+\subsubsection{\texorpdfstring{GenerateNewMaze()}{GenerateNewMaze()}}
+{\footnotesize\ttfamily void Maze\+Constructor.\+Generate\+New\+Maze (\begin{DoxyParamCaption}\item[{int}]{sizeR,  }\item[{int}]{sizeC }\end{DoxyParamCaption})}
+
+
+
+Function to generate the maze. 
+
+Uses the appropriate algorithm according to the selected option in the UI and applies it to the 2d array. Disposes the old maze.
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_maze_constructor_a209b5c76afef240cbcfbd50032d6e35a}\label{class_maze_constructor_a209b5c76afef240cbcfbd50032d6e35a}} 
+\index{MazeConstructor@{MazeConstructor}!SetPlaneCamera@{SetPlaneCamera}}
+\index{SetPlaneCamera@{SetPlaneCamera}!MazeConstructor@{MazeConstructor}}
+\subsubsection{\texorpdfstring{SetPlaneCamera()}{SetPlaneCamera()}}
+{\footnotesize\ttfamily void Maze\+Constructor.\+Set\+Plane\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Positions the Camera and the plane according to the number of rows and columns of the maze. 
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sanan/\+One\+Drive/\+Documents/\+Maze\+\_\+generator/\+Assets/\+Scripts/Maze\+Constructor.\+cs\end{DoxyCompactItemize}

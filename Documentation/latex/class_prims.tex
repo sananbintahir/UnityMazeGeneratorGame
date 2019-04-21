@@ -1,0 +1,119 @@
+\hypertarget{class_prims}{}\section{Prims Class Reference}
+\label{class_prims}\index{Prims@{Prims}}
+
+
+Prim\textquotesingle{}s implementation of the maze generation algorithm.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{[},\mbox{]} \mbox{\hyperlink{class_prims_a91fe81277dd1390c13955bd5f338cd86}{Mazer}} (int R, int C)
+\begin{DoxyCompactList}\small\item\em Main function that generates a maze with cells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_prims_a72d5c6fce801461c3dc9a6a9e4f117f3}{process\+Wall}} (\mbox{\hyperlink{class_cell}{Cell}} cell)
+\begin{DoxyCompactList}\small\item\em Function applies to cell if it is a wall. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell}{Cell}} \mbox{\hyperlink{class_prims_a728350565172ad086c4fa5b8a453e419}{get\+Cell\+At}} (int c, int r)
+\begin{DoxyCompactList}\small\item\em gets cell at row and column \end{DoxyCompactList}\item 
+Array\+List \mbox{\hyperlink{class_prims_af79c48f9584fc1e8e37cf0ef5edd904e}{get\+Walls\+Around\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} cell)
+\begin{DoxyCompactList}\small\item\em get the walls around the cell in a list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_prims_a5e19cf37057d8302ba2aa9a06678d33b}\label{class_prims_a5e19cf37057d8302ba2aa9a06678d33b}} 
+Array\+List {\bfseries walls} = new Array\+List()
+\item 
+\mbox{\Hypertarget{class_prims_a4e3856df17463d773a054334f3b7fe17}\label{class_prims_a4e3856df17463d773a054334f3b7fe17}} 
+Array\+List {\bfseries cells} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Prim\textquotesingle{}s implementation of the maze generation algorithm. 
+
+Works with the cell class, and converts it into a 2d array which it returns to the maze constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prims_a728350565172ad086c4fa5b8a453e419}\label{class_prims_a728350565172ad086c4fa5b8a453e419}} 
+\index{Prims@{Prims}!getCellAt@{getCellAt}}
+\index{getCellAt@{getCellAt}!Prims@{Prims}}
+\subsubsection{\texorpdfstring{getCellAt()}{getCellAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} Prims.\+get\+Cell\+At (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{int}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gets cell at row and column 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & and column position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cell at row and column in parameter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prims_af79c48f9584fc1e8e37cf0ef5edd904e}\label{class_prims_af79c48f9584fc1e8e37cf0ef5edd904e}} 
+\index{Prims@{Prims}!getWallsAroundCell@{getWallsAroundCell}}
+\index{getWallsAroundCell@{getWallsAroundCell}!Prims@{Prims}}
+\subsubsection{\texorpdfstring{getWallsAroundCell()}{getWallsAroundCell()}}
+{\footnotesize\ttfamily Array\+List Prims.\+get\+Walls\+Around\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+get the walls around the cell in a list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & cell to look around\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Arraylist containing the walls 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prims_a91fe81277dd1390c13955bd5f338cd86}\label{class_prims_a91fe81277dd1390c13955bd5f338cd86}} 
+\index{Prims@{Prims}!Mazer@{Mazer}}
+\index{Mazer@{Mazer}!Prims@{Prims}}
+\subsubsection{\texorpdfstring{Mazer()}{Mazer()}}
+{\footnotesize\ttfamily int \mbox{[},\mbox{]} Prims.\+Mazer (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{C }\end{DoxyParamCaption})}
+
+
+
+Main function that generates a maze with cells. 
+
+Works with the cell class to perform operations and finally converts to a 2d array where 1s are walls and 0s are empty cells
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of rows and columns of maze\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2d array representing the maze 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prims_a72d5c6fce801461c3dc9a6a9e4f117f3}\label{class_prims_a72d5c6fce801461c3dc9a6a9e4f117f3}} 
+\index{Prims@{Prims}!processWall@{processWall}}
+\index{processWall@{processWall}!Prims@{Prims}}
+\subsubsection{\texorpdfstring{processWall()}{processWall()}}
+{\footnotesize\ttfamily void Prims.\+process\+Wall (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}}}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function applies to cell if it is a wall. 
+
+Starts with a random cell and keeps track of the cell seperated by the current wall by storing it as a parent. The wall is destroyed if only one of the two cells it seperates is visited.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_cell}{Cell}}} & to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sanan/\+One\+Drive/\+Documents/\+Maze\+\_\+generator/\+Assets/\+Scripts/Prims.\+cs\end{DoxyCompactItemize}
